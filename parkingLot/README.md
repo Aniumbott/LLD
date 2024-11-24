@@ -18,4 +18,4 @@
 7. The **Main** class demonstrates the usage of the parking lot system.
 
 ## UML Diagram:
-![UML Diagram](./ParkingLot_UML.png.png)
+![UML Diagram](./ParkingLot_UML.png)
