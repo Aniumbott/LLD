@@ -4,34 +4,34 @@
 #include "VendingMachine.h"
 #include <iostream>
 
-int main() {
+int main()
+{
   VendingMachine &vendingMachine = VendingMachine::getInstance();
 
-  Product coke("Coke", 1.5);
-  Product pepsi("Pepsi", 1.5);
-  Product water("Water", 1.0);
+  Product coke("Coke", 280);
+  Product pepsi("Pepsi", 180);
+  Product water("Water", 20);
 
   vendingMachine.inventory.addProduct(coke, 5);
   vendingMachine.inventory.addProduct(pepsi, 3);
   vendingMachine.inventory.addProduct(water, 2);
 
   vendingMachine.selectProduct(coke);
-  vendingMachine.insertCoin(Coin::QUARTER);
-  vendingMachine.insertCoin(Coin::QUARTER);
-  vendingMachine.insertCoin(Coin::QUARTER);
-  vendingMachine.insertCoin(Coin::QUARTER);
-  vendingMachine.insertNote(Note::FIVE);
+  vendingMachine.insertNote(Note::TWO_HUNDRED_N);
+  vendingMachine.insertNote(Note::ONE_HUNDRED_N);
+  vendingMachine.insertNote(Note::FIFTY_N);
+  vendingMachine.insertCoin(Coin::TWENTY_C);
+  vendingMachine.insertCoin(Coin::TWENTY_C);
 
   vendingMachine.dispenseProduct();
   vendingMachine.returnChange();
 
   vendingMachine.selectProduct(pepsi);
-  vendingMachine.insertCoin(Coin::QUARTER);
+  vendingMachine.insertNote(Note::ONE_HUNDRED_N);
   vendingMachine.dispenseProduct();
-  vendingMachine.insertCoin(Coin::QUARTER);
-  vendingMachine.insertCoin(Coin::QUARTER);
-  vendingMachine.insertCoin(Coin::QUARTER);
-  vendingMachine.insertCoin(Coin::QUARTER);
+  vendingMachine.insertCoin(Coin::TEN_C);
+  vendingMachine.insertCoin(Coin::TWENTY_C);
+  vendingMachine.insertNote(Note::FIFTY_N);
   vendingMachine.dispenseProduct();
   vendingMachine.returnChange();
 
