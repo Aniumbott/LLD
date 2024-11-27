@@ -6,6 +6,7 @@ This repository contains the projects that I have built while learning low level
 
 - [Parking Lot](#1-parking-lot)
 - [Vending Machine](#2-vending-machine)
+- [Stack Overflow](#3-stack-overflow)
 
 ## 1. Parking Lot
 
@@ -38,7 +39,7 @@ This repository contains the projects that I have built while learning low level
 
 ## 2. Vending Machine
 
-### Requirements
+### Requirements:
 
 1. The vending machine should support multiple products with different prices and quantities.
 1. The machine should accept coins and notes of different denominations.
@@ -48,7 +49,7 @@ This repository contains the projects that I have built while learning low level
 1. The machine should provide an interface for restocking products and collecting money.
 1. The machine should handle exceptional scenarios, such as insufficient funds or out-of-stock products.
 
-### Classes, Interfaces and Enumerations
+### Classes, Interfaces and Enumerations:
 
 1. The **Product** class represents a product in the vending machine, with properties such as name and price.
 2. The **Coin** and **Note** enums represent the different denominations of coins and notes accepted by the vending machine.
@@ -59,7 +60,7 @@ This repository contains the projects that I have built while learning low level
 7. The VendingMachine class maintains the current state, selected product, total payment, and provides methods for state transitions and payment handling.
 8. The **VendingMachineDemo** class demonstrates the usage of the vending machine by adding products to the inventory, selecting products, inserting coins and notes, dispensing products, and returning change.
 
-### UML Diagram
+### UML Diagram:
 
 ![UML Diagram](./media/VendingMachine_UML.png)
 
@@ -67,3 +68,35 @@ This repository contains the projects that I have built while learning low level
 
 - [JAVA](./JAVA/vendingmachine)
 - [C++](./CPP/vendingmachine)
+
+## 3. Stack Overflow
+
+### Requirements:
+
+1. Users can post questions, answer questions, and comment on questions and answers.
+2. Users can vote on questions and answers.
+3. Questions should have tags associated with them.
+4. Users can search for questions based on keywords, tags, or user profiles.
+5. The system should assign reputation score to users based on their activity and the quality of their contributions.
+6. The system should handle concurrent access and ensure data consistency.
+
+### Classes, Interfaces and Enumerations
+
+1. The User class represents a user of the Stack Overflow system, with properties such as id, username, email, and reputation.
+2. The Question class represents a question posted by a user, with properties such as id, title, content, author, answers, comments, tags, votes and creation date.
+3. The Answer class represents an answer to a question, with properties such as id, content, author, associated question, comments, votes and creation date.
+4. The Comment class represents a comment on a question or an answer, with properties such as id, content, author, and creation date.
+5. The Tag class represents a tag associated with a question, with properties such as id and name.
+6. The Vote class represents vote associated with a question/answer.
+7. The StackOverflow class is the main class that manages the Stack
+8. Overflow system. It provides methods for creating user, posting questions, answers, and comments, voting on questions and answers, searching for questions, and retrieving questions by tags and users.
+9. The StackOverflowDemo class demonstrates the usage of the Stack
+10. Overflow system by creating users, posting questions and answers, voting, searching for questions, and retrieving questions by tags and users.
+
+### UML Diagram:
+
+![UML Diagram](./media/StackOverflow_UML.png)
+
+### Implementation:
+
+- [JAVA](./JAVA/stackoverflow)
